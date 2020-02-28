@@ -36,6 +36,8 @@ class AngryBotTest {
         boolean [] botsSensed = {false, true, true, true, true};
         t.senseDistricts(spressoSensed, botsSensed);
         assertEquals(District.CURRENT, t.getNextMove(), "Should not move");
+        System.out.println(t.energyLevel);
+        assertTrue(t.useShield(), "Energy level should be at 2");
         assertTrue(t.useShield(), "Energy level should be at 1");
         assertFalse(t.useShield(), "Energy level should be at 0");
     }
