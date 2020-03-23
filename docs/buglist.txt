@@ -1,0 +1,34 @@
+1.
+a) AngryBot.java
+b) getNextMove
+c) 71
+d) Code was decrementing the energy level if the move was to stay in the same place when it should be decrementing if it was not going to stay
+e) changed == to != on line 71 so that code would decrement for the right cause
+
+2.
+a) AngryBot.java
+b)getNextMove()
+c) 48
+d) code was picking the wrong time to attack
+e) changed (energyLevel < 2) to (energyLevel > 2) so that the bot would attack  if the energy level is above 2
+
+3.
+a) BullyBot.java
+b)fireCannon()
+c) 66-67
+d) Was outputting an index out of bounds error and the wrong value for energy level
+e)Changed the program so that j is incrementing instead of decrementing and energy level to decrement instead of increment
+
+4.
+a) ChickenBot.java
+b) getNextMove()
+c) 50
+d) Code was trying to have the bot move even if the energy level was 0
+e) changed code to only move when energy level was greater then 0 instead of greater then or equal to 0
+
+5.
+a) TimBot.java
+b) harvestSpresso(int jolts)
+c) 157
+d) Code was not limiting the energy level at 99
+e) Changed the if statement so it will put the energylevel back down to 99 if energylevel>99 instead of energylevel<99

@@ -56,6 +56,7 @@ public class DohNat {
       returns: true on success or false otherwise.
    */
   public boolean setTimBot( TimBot bot, int x, int y ) {
+
     return districts[x][y].setTimBot( bot );
   }
 

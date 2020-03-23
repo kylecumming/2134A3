@@ -39,7 +39,7 @@ public class TimSim {
     int numBots = stdin.nextInt();
 
     // Instantiate planet and array of timbots
-    DohNat planet = new DohNat( rows, columns, jolts, growth );
+    DohNat planet = new DohNat( rows, columns, jolts, growth);
     TimBot [] bots = new TimBot[numBots];
     
     // Load timbot configurations
@@ -57,7 +57,7 @@ public class TimSim {
         bots[i] = new ChickenBot( id, energy );
         break;
       case "spresso":
-        bots[i] = new SpressoBot( id, energy );
+        bots[i] = new SpressoBot( id, energy);
         break;
       case "angry":
         bots[i] = new AngryBot( id, energy );
@@ -68,6 +68,7 @@ public class TimSim {
       }
 
       // Error checking (unnecessary)
+
       if( !planet.setTimBot( bots[i], x, y ) ) {
         System.err.println( bots[i] + " not added" );
         return;

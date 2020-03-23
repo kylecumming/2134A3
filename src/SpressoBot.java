@@ -15,7 +15,7 @@
 public class SpressoBot extends TimBot { 
   /**
      This is the only constructor for this class.  This constructor
-     initializes the Tibot and sets its ID and the initial amount of
+     initializes the Timbot and sets its ID and the initial amount of
      energy that it has.
 
      parameter: id    : ID of the TimBotA
@@ -69,7 +69,7 @@ public class SpressoBot extends TimBot {
       }
 
       // If the move is to anothr district, decrement energy level.
-      if( move == District.CURRENT ) {
+      if( move != District.CURRENT ) {
         energyLevel--;
       }
     }

@@ -47,7 +47,7 @@ public class ChickenBot extends TimBot {
     int move = District.CURRENT;
 
     // If we have energy, consider moving
-    if( energyLevel >= 0 ) {
+    if( energyLevel > 0 ) {
       // Loop through all possibilities and compute the scores.
       for( int i = 0; i < scores.length; i++ ) {
         scores[i] = spressoSensed[i];

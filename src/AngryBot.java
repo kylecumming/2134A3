@@ -45,7 +45,7 @@ public class AngryBot extends SpressoBot {
     int move = District.CURRENT;
 
     // If we have enough energy, consider attacking another district
-    if( energyLevel < 2 ) {
+    if( energyLevel > 2 ) {
       // Compute scores for each of the districts, the lower scores are better
       // score = spressoCount + 2000 * (if district is empty)
       for( int i = 1; i < scores.length; i++ ) {

@@ -53,7 +53,7 @@ public class BullyBot extends ChickenBot {
     }
 
     // If we are going to shoot, create the array of shots
-    if( count > 0 ) {
+    if( count > 0) {
       // allocate array and set index into it to 0.
       fire = new int[count];  
       int j = 0;
@@ -63,8 +63,8 @@ public class BullyBot extends ChickenBot {
       for( int i = District.NORTH; i < botsSensed.length; i++ ) {
         if( ( i != District.CURRENT ) && botsSensed[i] && ( j < count ) ) {
           fire[j] = i;
-          j--;
-          energyLevel++;
+          j++;
+          energyLevel--;
         }
       }
     }

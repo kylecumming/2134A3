@@ -44,6 +44,7 @@ public class TimBot {
   }
 
 
+
   /** 
      This method is called at the start of the round.  The TimBot
      uses up one jolt of energy at the start or each round.  This
@@ -134,12 +135,13 @@ public class TimBot {
      This method is called when the TimBot has to use its shield.
      This costs the TimBot 1 Jolt of energy.  If the TimBot has
      positive enery, it must use its shield (and use 1 Jolt of
-     energy).  Otherwise, its energy level becomes -1 and it 
+     energy).  Otherwise, its energy level becomes -1 and it
      becomes nonfunctional.
 
      returns: true if the shield was raised.
    */
   public boolean useShield() {
+
     return useJolt();
   }
 
@@ -153,7 +155,7 @@ public class TimBot {
   public void harvestSpresso( int jolts ) {
     // add harvest jolts to energy level and ensure it does not exceed 99
     energyLevel += jolts;
-    if( energyLevel < 99 ) {
+    if( energyLevel > 99 ) {
       energyLevel = 99;
     }
   }
